@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   <!-- Allows proper display of characters -->
+    <title>Uk Koi Travel</title>  <!-- Title shown in the browser tab -->
+
+    <!-- Links Font Awesome for icons (search, basket, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Links your custom CSS file -->
+    <link rel="stylesheet" href="UK_KOI_TRAVEL.css"> 
+</head>
+<body>
+
+<!-- 🔥 BACKGROUND VIDEO -->
+    <video autoplay muted loop playsinline id="bg-video"> <!-- Background video element -->
+        <source src="Ochibautsuri_Koi_Farm.mp4" type="video/mp4"> <!-- Video source file -->
+    </video>
+
+    <div class="top-bar"> <!-- Top navigation bar -->
+        <div class="logo"> 
+            <img src="Koi-fish-logo.png" alt="Koi Uk Travel Logo">  
+        </div>
+
+       <ul class="menu"> <!-- Navigation menu -->
+           <li class="dropdown">
+           <a href="#">Home</a> <!-- Home link -->
+           <ul class="dropdown-menu"> <!-- Dropdown menu for Home -->
+           <li><a href="#home">Welcome</a></li> <!-- Link to the home section -->
+           <li><a href="gallery.html">Gallery</a></li> <!-- Link to the gallery page -->
+       </ul>
+
+           
+
+    <li class="dropdown"> 
+        <a href="#">Koi Trips</a> <!-- Koi Trips dropdown menu -->
+        <ul class="dropdown-menu"> <!-- Dropdown menu for Koi Trips -->
+            <li><a href="booking.html">Japan Koi Trip</a></li> <!-- Link to the booking page for Japan Koi Trip -->
+        </ul>
+    </li>
+
+    <li class="dropdown">
+
+    <a href="#">Contact</a> <!-- Contact dropdown menu -->
+
+    <ul class="dropdown-menu contact-dropdown"> <!-- Dropdown menu for Contact -->
+        <li><span>Email: info@ukkoi-travel.com</span></li> <!-- Contact email -->
+        <li><span>Phone: +44 0000 000000</span></li> <!-- Contact phone number -->
+    </ul>
+
+    </li>
+
+    </ul>
+       <div class="top-icons"> <!-- Container for search and basket icons -->
+        <div class="basket"> 
+       <i class="fa-solid fa-basket-shopping"></i> 
+       <span id="basket-count">0</span> 
+        </div>
+
+       </div>
+
+    </div>
+     <section id="home"></section> <!-- Home section for welcome message -->
+
+
+    
+    <div class="gallery"> <!-- Gallery section containing photo cards -->
+    
+        <div class="photo-card"> <!-- Single photo item -->
+            <!-- Image with descriptive alt text -->
+            <img src="NND-Koi-Farm.jpeg" alt="NND Koi Farm">
+            <p class="caption">“NND: Where world-class koi meet world-class hospitality.”</p>
+            <a class="button" href="#">Add to basket</a>
+        </div>
+
+        <div class="photo-card">
+            <img src="Ochibautsur-Koi-Farm.jpeg" alt="Ochibautsur Koi Farm">
+            <p class="caption">“Where the Legendary Round Pond Awaits Every Koi Keeper”</p>
+            <a class="button" href="#">Add to basket</a> <!-- Button to add item to basket -->
+            
+        </div>
+
+        <div class="photo-card"> <!-- Single photo item -->
+            <img src="Japan-Trip.jpeg" alt="Japan Koi Trip"> 
+            <p class="caption">Niigata — The Dream Destination of Every Koi Keeper.</p> 
+            <a class="button" href="#">Add to basket</a> <!-- Button to add item to basket -->
+        </div>
+
+    </div>
+        <div class="cart-panel" id="cart-panel">
+        <h2>Your Basket</h2>
+        <ul id="cart-items"></ul>
+        <button class="close-cart" id="close-cart">Close</button>
+
+        </div>
+
+    <footer>
+        <p>Copyright Of Uk Koi Travel 2026.</p> <!-- Copyright text -->
+    </footer>
+
+    <!-- FUTURE JAVASCRIPT -->
+    <script src="UK_KOI_TRAVEL.js"></script>
+
+</body>
+</html>                           
